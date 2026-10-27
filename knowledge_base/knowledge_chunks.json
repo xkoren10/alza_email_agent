@@ -1,0 +1,142 @@
+[
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "manual_section",
+    "content": "Alza.cz Technical Documentation  |  Premium Aerospace Division SKLADEM (ON STOCK)\nAeroSpace Pulsar-1 Personal Orbital Shuttle\nSingle-Occupant Sub-Orbital & Low-Earth-Orbit Class Vehicle — Model Year 2027\nCATALOGUE SKU: ALZA-SP-PLS1-2027 1 299 000 000 Kč vč. DPH"
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "manual_section",
+    "content": "1. Product Overview\nThe AeroSpace Pulsar-1 is a revolutionary single-person shuttle engineered for high-altitude sub-orbital commutes\nand low-Earth orbit access. Built around a carbon-titanium composite monocoque chassis, the vessel features an\nautomated AI ﬂight director system, redundant life-support scrubbers, and dual hybrid ion-plasma thrusters.\nExclusively distributed via Alza.cz with white-glove orbital delivery options."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "manual_section",
+    "content": "2. Technical Speciﬁcations\nParameter Value Standard / Notes\nCrew Capacity 1 Operator (Single cockpit) Anatomical Zero-G bucket seat\nMax Velocity Mach 24.5 (28,000 km/h) LEO insertion capability\nDry Mass 1,420 kg Carbon-mesh composite shell\nPropulsion Hyperion-9 Ion/Plasma Engine Pulse-detonation RCS thrusters\nLife Support (O2) 48 Hours nominal runtime Dual active lithium scrubbers\nPower Source Solid-State Fusion Cell Mk-IV 750 kWh capacity\nWarranty 3 Years Alza Premium Assist Includes 24/7 Orbital Recovery\nSafety Notice: Ensure pilot has completed Alza Flight Level II certiﬁcation before initiating main thruster priming\nsequence. Operating without calibrated thermal shield tiles voids warranty.\nAeroSpace Pulsar-1 User Manual & Diagnostic Guide Page 1 of 2"
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "manual_section",
+    "content": "3. On-Board Diagnostic Matrix & Error Codes\nThe Pulsar-1 ﬂight controller continuously monitors hull integrity, engine telemetry, and life-support subsystems.\nBelow is the reference table for diagnostic error codes displayed on the main HUD and warning light panel.\nCode System Subroutine Severity Description & Recommended Action"
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "error_code_definition",
+    "content": "AeroSpace Pulsar-1 Diagnostic Error Code Record -> ERR-101 O2 Scrubber Flow CRITICAL Oxygen recirculation rate dropped below 85%. Switch toauxiliary bottle reserve immediately."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "error_code_definition",
+    "content": "AeroSpace Pulsar-1 Diagnostic Error Code Record -> ERR-104 RCS Nozzle Alignment WARNING Pitch RCS thruster offset detected (>3.2°). Performmanual recalibration from control panel."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "error_code_definition",
+    "content": "AeroSpace Pulsar-1 Diagnostic Error Code Record -> ERR-208 Thermal Shield Grid CRITICAL Ablative layer degradation on ventral starboard tiles.Atmospheric re-entry prohibited."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "error_code_definition",
+    "content": "AeroSpace Pulsar-1 Diagnostic Error Code Record -> ERR-302 Fusion Core Cell Temp WARNING Coolant loop temperature exceeded 420 K. Secondaryheatsink fans engaged."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "error_code_definition",
+    "content": "AeroSpace Pulsar-1 Diagnostic Error Code Record -> ERR-315 Plasma Injector Pressure CRITICAL Fuel manifold pressure drop detected. Engineautomatically throttled to idle. Inspect valve V-4."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "error_code_definition",
+    "content": "AeroSpace Pulsar-1 Diagnostic Error Code Record -> ERR-401 Navigation / Lidar Sync INFO Orbital positioning pulse delayed >120ms.Recalculating orbit trajectory vectors via terrestrial GPS."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "error_code_definition",
+    "content": "AeroSpace Pulsar-1 Diagnostic Error Code Record -> ERR-505 Canopy Pressure Seal CRITICAL Micro-leakage detected in primary cockpit gasket.Engage pressure suit emergency lock."
+  },
+  {
+    "source": "Pulsar-1 User & Diagnostic Manual.pdf",
+    "type": "manual_section",
+    "content": "4. Service & Maintenance Guidelines\nRegular maintenance must be performed every 50 ﬂight hours or 10 orbital re-entries, whichever comes ﬁrst. Only\nauthorized Alza Aerospace Technicians are certiﬁed to replace Fusion Core components and Ablative Heat Shielding.\nReplacement parts must be selected strictly from the oﬃcial Pulsar-1 Spare Parts Catalog.\nEmergency Procedure: In case of simultaneous ERR-101 and ERR-505 warnings, trigger the emergency escape pod\nejection sequence by pulling the dual yellow handles located between your knees.\nAeroSpace Pulsar-1 User Manual & Diagnostic Guide Page 2 of 2"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-ION-001 | Part Name (English): Ion Micro-Thruster Nozzle Core | Category: Propulsion | Unit Price (CZK): 4500000 | Stock Qty (Prague Hub): 4 | Stock Status: In Stock | Compatible Error Codes: E-101, E-102"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-MAG-004 | Part Name (English): Magnetic Field Coil Injector | Category: Propulsion | Unit Price (CZK): 8900000 | Stock Qty (Prague Hub): 2 | Stock Status: In Stock | Compatible Error Codes: E-103"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-OXY-012 | Part Name (English): Solid-State Oxygen Scrubber Cartridge | Category: Life Support | Unit Price (CZK): 125000 | Stock Qty (Prague Hub): 45 | Stock Status: In Stock | Compatible Error Codes: E-201"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-CO2-015 | Part Name (English): Active Thermal CO2 Catalyser | Category: Life Support | Unit Price (CZK): 450000 | Stock Qty (Prague Hub): 12 | Stock Status: In Stock | Compatible Error Codes: E-202"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-ATM-020 | Part Name (English): Cabin Atmosphere Pressure Regulator | Category: Life Support | Unit Price (CZK): 980000 | Stock Qty (Prague Hub): 6 | Stock Status: In Stock | Compatible Error Codes: E-203"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-RAD-008 | Part Name (English): Graphene Heat Dissipation Radiator Panel | Category: Thermal | Unit Price (CZK): 3200000 | Stock Qty (Prague Hub): 1 | Stock Status: Low Stock | Compatible Error Codes: E-301, E-302"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-PMP-009 | Part Name (English): Cryogenic Coolant Recirculation Pump | Category: Thermal | Unit Price (CZK): 1450000 | Stock Qty (Prague Hub): 0 | Stock Status: Out of Stock | Compatible Error Codes: E-303"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-FUS-101 | Part Name (English): Plasma Containment Fusion Fuse (500A) | Category: Power / Electrical | Unit Price (CZK): 85000 | Stock Qty (Prague Hub): 120 | Stock Status: In Stock | Compatible Error Codes: E-401"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-BAT-105 | Part Name (English): Solid-State Quantum Battery Cell Unit | Category: Power / Electrical | Unit Price (CZK): 12500000 | Stock Qty (Prague Hub): 3 | Stock Status: In Stock | Compatible Error Codes: E-402, E-403"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-NAV-001 | Part Name (English): Lidar Space Collision Avoidance Sensor | Category: Avionics / Nav | Unit Price (CZK): 2750000 | Stock Qty (Prague Hub): 8 | Stock Status: In Stock | Compatible Error Codes: E-501"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-NAV-003 | Part Name (English): Stellar Alignment Optical Tracker Unit | Category: Avionics / Nav | Unit Price (CZK): 4100000 | Stock Qty (Prague Hub): 0 | Stock Status: Out of Stock | Compatible Error Codes: E-502"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-RCS-088 | Part Name (English): RCS Solenoid Control Valve Module | Category: Propulsion | Unit Price (CZK): 620000 | Stock Qty (Prague Hub): 18 | Stock Status: In Stock | Compatible Error Codes: E-101"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-HSH-002 | Part Name (English): ABLATIVE Heat Shield Tile (Segment A) | Category: Structure | Unit Price (CZK): 1850000 | Stock Qty (Prague Hub): 15 | Stock Status: In Stock"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-CAN-007 | Part Name (English): Multi-Layer Quartz Pilot Canopy Assembly | Category: Structure | Unit Price (CZK): 9400000 | Stock Qty (Prague Hub): 2 | Stock Status: In Stock | Compatible Error Codes: E-203"
+  },
+  {
+    "source": "Pulsar-1_Spare_Parts_Inventory.xlsx",
+    "type": "spare_part_record",
+    "content": "AeroSpace Pulsar-1 Spare Part Record -> Part ID: PLS-AIU-990 | Part Name (English): Main Flight Computer Neural Unit (Core) | Category: Avionics / Nav | Unit Price (CZK): 18900000 | Stock Qty (Prague Hub): 1 | Stock Status: Low Stock | Compatible Error Codes: E-503"
+  },
+  {
+    "source": "Pulsar-1 Control Panel View.jpg",
+    "type": "visual_schematic_metadata",
+    "content": "Cockpit Control Panel & Warning Light Schematic Description: ```yaml\n# AEROSPACE PULSAR-1 SHUTTLE: COCKPIT CONTROL PANEL MANIFEST\n# DOCUMENT REF: KB-PLS1-CC-0492\n# STATUS: UNCLASSIFIED / TECHNICAL SPECIFICATION\n\nsystem_unit:\n  designation: \"Auxiliary Subsystem & Propulsion Override Panel (Type-B)\"\n  mounting: \"Brushed titanium-alloy housing with structural corner-fasteners\"\n\nsections:\n  - section_id: \"PRIMARY_STATUS_MODULE\"\n    description: \"Left-hand auxiliary panel controlling primary system verification and major operational nodes.\"\n    indicators_and_switches:\n      - id: \"SYS_01\"\n        type: \"Illuminated Push Button\"\n        label: \"SYS OK\"\n        state: \"Active / Illuminated\"\n        color: \"Green\"\n        function: \"Main subsystem operational verification\"\n\n      - id: \"E_101\"\n        type: \"Illuminated Push Button\"\n        label: \"E-101 ION NOZZLE\"\n        state: \"Active / Illuminated\"\n        color: \"Amber\"\n        function: \"Ion nozzle propulsion control and diagnostics\"\n\n      - id: \"E_401\"\n        type: \"Illuminated Push Button\"\n        label: \"E-401 FUSE\"\n        state: \"Active / Illuminated\"\n        color: \"Amber\"\n        function: \"Primary circuit breaker and main electrical fusing\"\n\n      - id: \"E_201\"\n        type: \"Warning Indicator\"\n        label: \"E-201 O2 SCRUB\"\n        state: \"Active / Warning\"\n        color: \"Red\"\n        symbol: \"Exclamation Triangle (!)\"\n        function: \"Oxygen scrubber system anomaly / fault alert\"\n\n      - id: \"E_301\"\n        type: \"Warning Indicator\"\n        label: \"E-301 THERM\"\n        state: \"Active / Warning\"\n        color: \"Red\"\n        symbol: \"Exclamation Triangle (!)\"\n        function: \"Thermal regulation subsystem critical warning\"\n\n      - id: \"E_501_A\"\n        type: \"Illuminated Push Button\"\n        label: \"E-501\"\n        state: \"Active / Illuminated\"\n        color: \"Blue\"\n        function: \"Auxiliary telemetry interface 501\"\n\n      - id: \"E_501_B\"\n        type: \"Illuminated Push Button\"\n        label: \"E-501 LIDAR\"\n        state: \"Active / Illuminated\"\n        color: \"Blue\"\n        function: \"LIDAR ranging and surface mapping array\"\n\n  - section_id: \"ENGINE_MANAGEMENT_AND_FLIGHT_CONTROL\"\n    description: \"Central and right-hand master control interface for engine sequencing, navigation arrays, and manual overrides.\"\n    sub_assemblies:\n      - category: \"PST/ER & Engine Core Grid\"\n        components:\n          - id: \"SYS_02\"\n            type: \"Push Button\"\n            label: \"SYS OK\"\n            color: \"Green\"\n          - id: \"ENTRON\"\n            type: \"Push Button\"\n            label: \"ENTRON\"\n            color: \"Amber\"\n          - id: \"ENGRQS\"\n            type: \"Push Button\"\n            label: \"ENGRQS\"\n            color: \"Amber\"\n          - id: \"GGIND\"\n            type: \"Push Button\"\n            label: \"GGIND\"\n            color: \"Dark Grey\"\n          - id: \"ERGD\"\n            type: \"Push Button\"\n            label: \"ERGD\"\n            color: \"Dark Grey\"\n\n      - category: \"Navigation and Sub-Grid Arrays (NAV Matrix)\"\n        rows:\n          row_1:\n            - \"MCDXIDS (Amber)\"\n            - \"KAAN (Amber)\"\n            - \"8J10 (Amber)\"\n            - \"GABRU (Blue border)\"\n          row_2:\n            - \"PENGKY (Amber)\"\n            - \"TBN (Amber)\"\n            - \"M0Z0ER (Amber)\"\n            - \"S0ICK H0NIER (Amber)\"\n          row_3:\n            - \"FENCER (Amber)\"\n            - \"RENV00 (Amber)\"\n            - \"T0RG M0ZZLE (Amber)\"\n            - \"FRKRN (Amber)\"\n\n      - category: \"Rotary Encoder & Direct Interface\"\n        component:\n          id: \"PRISEK\"\n          type: \"Multi-directional Rotary Dial / Jog Wheel\"\n          function: \"Precision calibration and parameter adjustment\"\n\n      - category: \"Error Code System / Diagnostic Status Matrix\"\n        units:\n          - label: \"E-101 NGJS\"\n            type: \"Illuminated Push Button\"\n            color: \"Amber\"\n          - label: \"E-101 EONGE\"\n            type: \"Illuminated Push Button\"\n            color: \"Amber\"\n          - label: \"E-201 ION\"\n            type: \"Illuminated Push Button\"\n            color: \"Amber\"\n          - label: \"E-401 FUSE\"\n            type: \"Illuminated Push Button\"\n            color: \"Amber\"\n          - label: \"E-301 THERM\"\n            type: \"Illuminated Push Button\"\n            color: \"Amber\"\n\n      - category: \"Top Toggle Switch Bank (AWS / USE / DVE)\"\n        switches:\n          - id: \"AWS\"\n            type: \"Bat-handle Toggle Switch with Safety Guard\"\n          - id: \"USE\"\n            type: \"Bat-handle Toggle Switch\"\n          - id: \"DVE\"\n            type: \"Bat-handle Toggle Switch\"\n\n      - category: \"Lower ES-HBCK-CONTR0M0R Bank (Subsystem Switches)\"\n        switches:\n          - id: \"DM6-0\"\n            type: \"Multi-position Rotary / Toggle Selector\"\n          - id: \"T10N01\"\n            type: \"Spring-loaded Toggle\"\n          - id: \"GEMU1S\"\n            type: \"Spring-loaded Toggle\"\n          - id: \"TEMER\"\n            type: \"Spring-loaded Toggle\"\n          - id: \"G0NRN\"\n            type: \"Spring-loaded Toggle\"\n          - id: \"TSMCK\"\n            type: \"Spring-loaded Toggle\"\n```"
+  }
+]
