@@ -1,9 +1,14 @@
 import time
 import argparse
 from datetime import datetime
+from google import genai
+from dotenv import load_dotenv
 from connection_check import verify_gmail_connection, verify_gemini_connection
 from gmail_handler import fetch_unread_emails, send_email_reply
 from gemini_handler import generate_ai_response
+from rag_handler import EmailRAGRouter
+
+load_dotenv()
 
 def main():
     # Setup CLI argument parsing
@@ -30,6 +35,11 @@ def main():
         print("Exiting due to Gemini API connection error. Please check your GEMINI_API_KEY.")
         return
 
+    # 3. Initialize Gemini client and RAG Router once at startup
+    client = genai.Client()
+    rag_router = EmailRAGRouter(client)
+    wait_counter = 0
+
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] All systems online! Polling inbox every 10 seconds...\n")
     
     while True:
@@ -49,9 +59,20 @@ def main():
                 print(f"Body: {mail['body'][:100]}[...]")
                 print(f"-----------------------")
                 
-                # Generate AI response passing body and list of attachment paths
-                ai_reply = generate_ai_response(mail['body'], mail['attachment_paths'])
+                # --- RAG INTEGRATION START ---
+                # Check intent and fetch matching documentation chunks if technical
+                retrieved_contexts = rag_router.process_incoming_email(mail['subject'], mail['body'])
+                
+                # Pass both body, attachment paths, and retrieved RAG context snippets to the AI generator
+                ai_reply = generate_ai_response(
+                    email_body=mail['body'], 
+                    attachment_paths=mail['attachment_paths'],
+                    rag_contexts=retrieved_contexts
+                )
+                # --- RAG INTEGRATION END ---
+
                 print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] AI Response Generated:\n{ai_reply}\n-----------------------")
+                wait_counter = 0  # Reset wait counter after processing an email
 
                 # Send the reply back in thread ONLY if --no-reply is not active
                 if not args.no_reply:
@@ -64,7 +85,16 @@ def main():
                 else:
                     print("[TEST MODE]: Skipped sending email reply to user.")
         else:
-            print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] No new messages. Waiting...")
+            if wait_counter == 0:
+                print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] No new messages. Waiting", end="", flush=True)
+            
+            print(".", end="", flush=True)
+            wait_counter += 1
+            
+            # Every 6 ticks (6 * 10 seconds = 60 seconds), print a newline and reset
+            if wait_counter >= 6:
+                print()  # Move to the next line
+                wait_counter = 0
         
         time.sleep(10)
 
