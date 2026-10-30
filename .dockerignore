@@ -1,0 +1,19 @@
+# Python / Environment Caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git
+.gitignore
+.env
+venv/
+env/
+.venv/
+.DS_Store
+*.log
+
+# Exclude raw source files and offline build scripts from the runtime container
+knowledge_base/raw_files/
+preprocess_files.py
+create_indices.py
+attachments/

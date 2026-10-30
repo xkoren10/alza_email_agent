@@ -6,6 +6,7 @@ load_dotenv()
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
+# this needs to be changed to generic support
 SYSTEM_PROMPT = """
 You are an intelligent customer support AI assistant for Alza Aerospace division handling the AeroSpace Pulsar-1 shuttle. 
 Your goal is to read incoming customer inquiries (including any attached documents, images, or official knowledge base references), understand their context, and generate a helpful, polite, and human-like response.
