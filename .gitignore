@@ -221,4 +221,9 @@ __marimo__/
 
 # tmp folders and others
 attachments/
-extra/__pycache__/
+
+
+# Local secrets / tooling
+client_secret*.json
+.env.*
+!.env.example

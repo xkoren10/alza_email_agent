@@ -1,4 +1,22 @@
+# Runtime dependencies only: this is what goes into the container image.
+# Tools for building the knowledge base and running tests are in requirements-dev.txt.
+
+# --- web app ---
+flask>=3.0
+gunicorn>=22.0
+
+# --- Gemini (generation and embeddings) ---
 google-genai>=2.33.0
-protobuf==7.36.2
+pydantic>=2.0
+
+# --- Gmail API ---
+google-api-python-client>=2.100
+google-auth>=2.30
+
+# --- knowledge base search ---
+numpy>=1.26
+rank-bm25>=0.2.2
+
+# --- configuration ---
 python-dotenv==1.2.4
-pypdf==6.21.3
+protobuf==7.36.2
