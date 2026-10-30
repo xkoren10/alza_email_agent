@@ -221,4 +221,12 @@ __marimo__/
 
 # tmp folders and others
 attachments/
-extra/__pycache__/
+.vscode/
+
+
+# Local secrets / tooling
+client_secret*.json
+credentials.json
+.env.*
+token*.json
+!.env.example

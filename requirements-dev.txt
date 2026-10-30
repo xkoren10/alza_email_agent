@@ -1,0 +1,12 @@
+-r requirements.txt
+
+# --- offline knowledge base build (scripts/preprocess_files.py) ---
+pypdf==6.21.3
+pandas>=2.0
+openpyxl>=3.1
+
+# --- Gmail login helper (scripts/get_gmail_token.py) ---
+google-auth-oauthlib>=1.2
+
+# --- tests ---
+pytest>=8.0
