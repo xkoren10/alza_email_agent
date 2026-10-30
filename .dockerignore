@@ -1,10 +1,24 @@
-.git
-.vscode
-.env
+# Python / Environment Caches
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.git
+.gitignore
+.env
+venv/
+env/
+.venv/
+.DS_Store
+*.log
+.vscode
+
+# Exclude raw source files and offline build scripts from the runtime container
+knowledge_base/raw_files/
+knowledge_base/knowledge_chunks.json
+preprocess_files.py
+create_indices.py
+attachments/
 tests/
 docs/
 scripts/
-knowledge_base/raw_files/
-knowledge_base/knowledge_chunks.json
