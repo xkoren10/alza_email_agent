@@ -29,13 +29,14 @@ SUPPORTED_FILE_TYPES: dict[str, tuple[str, list[bytes]]] = {
 }
 
 
+# In app/attachments.py:
 def _matches_signature(data: bytes, ext: str) -> bool:
     if ext == ".webp":
-        return data[:4] == b"RIFF" and data[8:12] == b"WEBP"
+        return len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WEBP"
     if ext == ".wav":
-        return data[:4] == b"RIFF" and data[8:12] == b"WAVE"
+        return len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WAVE"
     if ext == ".m4a":
-        return data[4:8] == b"ftyp"
+        return len(data) >= 12 and data[4:8] == b"ftyp"
     return any(data.startswith(sig) for sig in SUPPORTED_FILE_TYPES[ext][1])
 
 

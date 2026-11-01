@@ -94,7 +94,8 @@ class GmailClient:
             stack = current.get("parts", []) + stack  # depth-first, keeps document order
             mime, filename, body = current.get("mimeType", ""), current.get("filename", ""), current.get("body", {})
 
-            if filename or (mime.startswith("image/") and body.get("attachmentId")):
+            # In app/gmail_client.py, inside _walk_pers():
+            if filename or ((mime.startswith("image/") or mime.startswith("audio/")) and body.get("attachmentId")):
                 filename = filename or f"inline.{mime.split('/')[-1]}"
                 attachment = validate_attachment(filename, self._attachment_bytes(message_id, body))
                 if attachment:

@@ -27,3 +27,7 @@ def test_webp_and_wav_need_full_riff_header():
 
 def test_directory_components_are_stripped_from_filename():
     assert validate_attachment("../../etc/x.png", PNG).filename == "x.png"
+
+def test_valid_m4a_is_accepted():
+    m4a_header = b"\x00\x00\x00\x20ftypM4A " + b"\x00" * 32
+    assert validate_attachment("recording.m4a", m4a_header) is not None

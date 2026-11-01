@@ -46,7 +46,7 @@ class EmailHandler:
 
     def handle(self, email: IncomingEmail) -> Outcome:
         """Runs the full pipeline for one email and records the result in Gmail."""
-        log.info("Handling email %s from %s: %s", email.message_id, email.sender, email.subject)
+        log.info("Handling email %s from %s: %s, %d attachments", email.message_id, email.sender, email.subject, len(email.attachments))
 
         if self._is_automated(email):
             log.info("Skipping automated or own message %s", email.message_id)

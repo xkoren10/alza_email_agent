@@ -14,17 +14,6 @@ For each email it:
 Every email gets a reply. For complaints, refunds, safety issues or anything the knowledge base can't answer,
 the reply acknowledges the message and says a specialist will follow up; the agent never guesses.
 
-## How it works
-
-```text
-Gmail inbox --watch--> Pub/Sub topic --push--> POST /pubsub/push (Flask on Cloud Run)
-                                                      |
-                                                 EmailHandler
-                                  +-------------------+--------------------+
-                               GmailClient        SupportAgent        (attachments.py)
-                         list / read / label /   Gemini + KnowledgeBase   validates files
-                            draft / send         classify / search / draft
-```
 
 ## Project structure
 
@@ -49,6 +38,9 @@ Gmail inbox --watch--> Pub/Sub topic --push--> POST /pubsub/push (Flask on Cloud
 │   ├── preprocess_files.py  # raw files -> knowledge_chunks.json
 │   ├── create_indices.py    # chunks -> vector_index/
 │   └── get_gmail_token.py   # one-off OAuth login that prints the Gmail refresh token
+├── google/                  # helper scripts (not part of the running service)
+│   ├── auth_second.py       # get credentials for a second test user in the project 
+│   └── register_watch.py    # one time execution for registering the Gmail watch on email
 ├── tests/                   # pytest unit tests (fakes, no network needed)
 ├── docs/DEPLOYMENT.md       # Step-by-step GCP setup (Cloud Run, Pub/Sub, Scheduler)
 ├── Dockerfile
