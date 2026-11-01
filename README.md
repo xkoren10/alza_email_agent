@@ -127,3 +127,6 @@ Commit the updated `knowledge_base/vector_index/`, then rebuild and redeploy the
 ## Deployment
 
 See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
+## Full documentation
+See [docs/Alza_Case_Study.pdf](docs/Alza_Case_study.pdf).
